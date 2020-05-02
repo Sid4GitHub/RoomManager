@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sid.roommanager">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BtScan"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtIns"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtBasicActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtTimeSync"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtCam"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtAlarm"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtColCh"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".BtRanCol"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".BtVoice"
+            android:configChanges="orientation|screenSize"
+        />
+    </application>
+
+</manifest>
